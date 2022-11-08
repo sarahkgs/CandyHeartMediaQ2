@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Miss+Fajardose&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Send+Flowers&display=swap');
+
+
+body{
+  background-image: url("heartcandybackground.png");
+  /* background-color: #1a000d; */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.hiddenText {
+  opacity: 0.0;
+  transition: all 1s;
+}
+
+.revealImage:hover + .hiddenText{
+  opacity: 1.0;
+}
+
+img{
+  margin-bottom:20px;
+  margin-left:20px;
+}
+
+p{
+  margin-left: 20px;
+}
+
+/* version 1 */
+@media only screen and (min-width: 480px){
+  p{
+    font-family: 'Miss Fajardose';
+    font-size: 30px;
+    color: #ff66b3;
+    width: 250px;
+    line-height: 20px;
+    margin-top: 0px;
+    display:inline-block;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+div{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #mainsubtitle{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    top: 100px;
+    width:80%;
+  }
+
+  #drawingone{
+    max-width: 40%;
+  }
+
+  #drawingtwo{
+    max-width: 50%;
+  }
+
+  #drawingthree{
+    max-width: 25%;
+  }
+
+  #drawingfour{
+    max-width: 50%;
+  }
+
+
+}
+
+
+/* version 2 */
+@media only screen and (min-width: 1200px){
+  p{
+    font-family: 'Miss Fajardose';
+    font-size: 45px;
+    color: #ff66b3;
+    width: 350px;
+    line-height: 40px;
+  }
+
+#alldivs{
+    display: flex;
+    flex-direction: row;
+  }
+
+  img{
+    margin-bottom:50px;
+    margin-left:20px;
+  }
+
+  #mainsubtitle{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 100px;
+    width:90%;
+    margin-bottom: 50px;
+  }
+
+  #drawingone{
+    max-width: 60%;
+  }
+
+  #drawingtwo{
+    max-width: 65%;
+  }
+
+  #drawingthree{
+    max-width: 50%;
+  }
+
+  #drawingfour{
+    max-width: 70%;
+  }
+
+}
